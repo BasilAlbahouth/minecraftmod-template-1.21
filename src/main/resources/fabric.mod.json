@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "minecraftmod",
+	"version": "${version}",
+	"name": "MinecraftMod",
+	"description": "This is Tutorial Mod!",
+	"authors": [
+		"Basil"
+	],
+	"contact": {
+		"homepage": "https://Basil.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "bsi",
+	"icon": "assets/minecraftmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.basil.tutorialmod.MinecraftMod"
+		],
+		"fabric-datagen": [
+			"net.basil.tutorialmod.MinecraftModDataGenerator"
+		],
+		"client": [
+			"net.basil.tutorialmod.MinecraftModClient"
+		]
+	},
+	"mixins": [
+		"minecraftmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
