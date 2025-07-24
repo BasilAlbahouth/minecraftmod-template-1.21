@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "minecraftmod",
+	"id": "tutorialmod",
 	"version": "${version}",
 	"name": "MinecraftMod",
 	"description": "This is Tutorial Mod!",
@@ -12,7 +12,7 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "bsi",
-	"icon": "assets/minecraftmod/icon.png",
+	"icon": "assets/tutorialmod/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
