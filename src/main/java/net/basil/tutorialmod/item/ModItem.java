@@ -10,17 +10,17 @@ import net.minecraft.util.Identifier;
 
 public class ModItem {
 
-    public static final Item PINL_GRANET = registerItem("pink_garnet", new Item(new Item.Settings()));
+    public static final Item PINK_GRANET = registerItem("pink_garnet", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(MinecraftMod.MOD_ID, name),item);
     }
 
     public static void registerModItem(){
-        MinecraftMod.LOGGER.info("Registering Mod Item for" + MinecraftMod.MOD_ID);
+        MinecraftMod.LOGGER.info("Registering Mod Items for " + MinecraftMod.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(PINL_GRANET);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
+            entries.add(PINK_GRANET);
         });
     }
 
