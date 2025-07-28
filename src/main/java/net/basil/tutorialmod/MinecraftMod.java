@@ -2,6 +2,7 @@ package net.basil.tutorialmod;
 
 import net.basil.tutorialmod.block.ModBlocks;
 import net.basil.tutorialmod.item.ModItem;
+import net.basil.tutorialmod.item.ModItemGroups;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -13,6 +14,7 @@ public class MinecraftMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 		ModItem.registerModItem();
 		ModBlocks.registerModBlocks();
 	}
