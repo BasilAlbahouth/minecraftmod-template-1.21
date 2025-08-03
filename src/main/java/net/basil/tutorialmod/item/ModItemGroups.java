@@ -25,8 +25,10 @@ public class ModItemGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.PINK_GARNET_BLOCK))
                     .displayName(Text.translatable("itemgroup.tutorialmod.pink_garnet_blocks"))
                     .entries((displayContext, entries) -> {
-                        entries.add(ModBlocks.PINK_GARNET_ORE);
+                        entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
                         entries.add(ModBlocks.PINK_GARNET_BLOCK);
+                        entries.add(ModBlocks.PINK_GARNET_ORE);
+                        entries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
                     }).build());
 
     public static void registerItemGroups(){
