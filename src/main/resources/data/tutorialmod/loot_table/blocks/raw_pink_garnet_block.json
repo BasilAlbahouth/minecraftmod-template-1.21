@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:blocks",
+  "type": "minecraft:block",
   "pools": [
     {
       "bonus_rolls": 0.0,
@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tutrorialmod:raw_pink_garnet_block"
+          "name": "tutorialmod:raw_pink_garnet_block"
         }
       ],
       "rolls": 1.0
